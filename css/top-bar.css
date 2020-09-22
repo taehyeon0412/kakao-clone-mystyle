@@ -1,0 +1,44 @@
+.top-bar {
+  display: flex;
+  position: fixed; /*스크롤을 해도 고정되게 해줌*/
+  top: 0;
+  justify-content: center;
+  width: 100%; /*fixed를 쓰려면 폭을 100% 다 쓴다고 해줘야
+  자기가 정한 위치로 고정됨*/
+  padding: 5px 3px;
+  box-sizing: border-box; /*내가 패딩을 줘도 박스 사이즈를 늘리지마 라는것*/
+}
+
+.top-bar__column {
+  width: 50%;
+}
+
+.top-bar__column:first-child span {
+  margin-left: 10px;
+  opacity: 0.6;
+}
+
+.top-bar__column:last-child span {
+  opacity: 0.5;
+}
+
+.top-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.fa-battery-quarter {
+  margin: 0px 6px;
+  opacity: 0.6;
+}
+
+.top-bar__column {
+  margin: 0px 6px;
+}
+
+.top-bar__column img {
+  width: 100px;
+  height: 20px;
+  margin-right: 5px;
+}

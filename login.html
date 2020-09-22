@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <!--html에서 기본적으로 설정되어있는것을 리셋 시키는 css를 넣음-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mystyle Kakao-talk</title>
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="top-bar__column">
+        <span>KT 18:43</span>
+      </div>
+      <div class="top-bar__column">
+        <!--top-bar 이미지넣기-->
+        <img src="screenshot/최상단 아이콘.png" />
+        <span>11%</span>
+        <i class="fas fa-battery-quarter fa-lg"></i>
+        <!--배터리 아이콘넣기-->
+      </div>
+    </div>
+    <!--top-bar완성-->
+
+    <header class="login-header">
+      <i class="fas fa-comment"></i>
+    </header>
+
+    <form action="friends.html" method="get" class="login-form">
+      <input
+        name="이름"
+        type="text"
+        placeholder="이메일 or 휴대폰 번호"
+        required
+      />
+      <!--placeholder =>input칸에 설명을 써주는것-->
+      <input
+        name="비밀번호"
+        type="password"
+        autocomplete="off"
+        placeholder="비밀번호"
+        required
+      />
+      <!--required는 input에 입력하지 않았을시 경고문을 띄워줌-->
+      <input type="submit" value="로그인" />
+      <!--submit 누르면 친구탭으로 이동-->
+      <a href="#">아이디 or 비밀번호 찾기</a>
+    </form>
+
+    <div class="blur-out-expand-fwd">
+      <i class="fas fa-comment"></i>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--아이콘 사이트에서 불러올 수있는 코드-->
+  </body>
+</html>

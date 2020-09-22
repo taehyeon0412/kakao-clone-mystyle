@@ -1,0 +1,124 @@
+.login-header {
+  display: flex;
+  flex-direction: column;
+  /*정렬방식을 위에서 아래로 정렬*/
+  margin: 100px 0px;
+  align-items: center;
+  font-size: 100px;
+}
+
+.login-header__title {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.login-header__text {
+  width: 60%;
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+
+.login-form input {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 18px 0px;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.login-form input:not([type="submit"]) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease-in-out;
+}
+
+.login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.login-form input:focus {
+  background-color: cornflowerblue;
+}
+/*input을 클릭했을시 border가 노란색으로 변함*/
+
+.login-form input[type="submit"] {
+  background-color: var(--brown);
+  cursor: pointer;
+  padding: 20px 0px;
+  border-radius: 5px;
+}
+
+.login-form a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 12px;
+}
+
+body {
+  background-color: var(--yellow);
+}
+
+.top-bar {
+  background-color: white;
+}
+
+/*투명도1에서 0까지 애니메이션으로 바꿈
+  @keyframes 기억하기 */
+
+.blur-out-expand-fwd {
+  background-color: var(--yellow);
+  position: absolute;
+  height: 100vh; /*화면 높이를 임의적으로 늘려놨으니 그 수치만큼 적어야됨*/
+  width: 100vw; /*화면 넓이의 100%를 차지한다는뜻*/
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 132px;
+  -webkit-animation: blur-out-expand-fwd 2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    2s both;
+  animation: blur-out-expand-fwd 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+}
+
+@-webkit-keyframes blur-out-expand-fwd {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+  100% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(300px);
+    transform: translateZ(300px);
+    -webkit-filter: blur(12px) opacity(0%);
+    filter: blur(12px) opacity(0%);
+  }
+}
+@keyframes blur-out-expand-fwd {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+  100% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(300px);
+    transform: translateZ(300px);
+    -webkit-filter: blur(12px) opacity(0%);
+    filter: blur(12px) opacity(0%);
+    visibility: hidden;
+    /*visibility:hidden => element는 그대로 있지만 사용자의 마우스에
+걸리지 않게 빠지는것(무시하는것) 그래서 정상적인 기능 수행가능*/
+  }
+}
+
+/*애니메이션 기능은 
+https://animista.net/play/text/blur-out/blur-out-expand-fwd에서
+퍼와서 사용가능*/
