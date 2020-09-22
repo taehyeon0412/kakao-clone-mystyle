@@ -59,8 +59,17 @@
   font-size: 12px;
 }
 
-body {
-  background-color: var(--yellow);
+.index-body {
+  height: 89.1vh;
+  background: linear-gradient(rgb(51, 112, 245), transparent),
+    linear-gradient(to top left, rgb(45, 11, 109), transparent),
+    linear-gradient(to top right, rgb(15, 100, 139), transparent);
+  background-blend-mode: screen;
+  background-blend-mode: multiply;
+  background-blend-mode: overlay;
+  background-blend-mode: darken;
+  background-blend-mode: soft-light;
+  background-blend-mode: luminosity;
 }
 
 .top-bar {
@@ -71,7 +80,7 @@ body {
   @keyframes 기억하기 */
 
 .blur-out-expand-fwd {
-  background-color: var(--yellow);
+  background-color: var(--gblue);
   position: absolute;
   height: 100vh; /*화면 높이를 임의적으로 늘려놨으니 그 수치만큼 적어야됨*/
   width: 100vw; /*화면 넓이의 100%를 차지한다는뜻*/
@@ -80,9 +89,9 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 132px;
-  -webkit-animation: blur-out-expand-fwd 2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    2s both;
-  animation: blur-out-expand-fwd 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+  -webkit-animation: blur-out-expand-fwd 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    3s both;
+  animation: blur-out-expand-fwd 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 3s both;
 }
 
 @-webkit-keyframes blur-out-expand-fwd {

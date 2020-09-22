@@ -3,3 +3,17 @@
 @import "top-bar.css";
 @import "login.css";
 @import "variables.css";
+@import "friends.css";
+
+body {
+  height: 100vh;
+  background: linear-gradient(rgb(51, 112, 245), transparent),
+    linear-gradient(to top left, rgb(45, 11, 109), transparent),
+    linear-gradient(to top right, rgb(15, 100, 139), transparent);
+  background-blend-mode: screen;
+  background-blend-mode: multiply;
+  background-blend-mode: overlay;
+  background-blend-mode: darken;
+  background-blend-mode: soft-light;
+  background-blend-mode: luminosity;
+}
