@@ -82,7 +82,7 @@
 .blur-out-expand-fwd {
   background-color: var(--gblue);
   position: absolute;
-  height: 100vh; /*화면 높이를 임의적으로 늘려놨으니 그 수치만큼 적어야됨*/
+  height: 104.5vh; /*화면 높이를 임의적으로 늘려놨으니 그 수치만큼 적어야됨*/
   width: 100vw; /*화면 넓이의 100%를 차지한다는뜻*/
   top: 0;
   display: flex;
