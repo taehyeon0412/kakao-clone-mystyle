@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <!--html에서 기본적으로 설정되어있는것을 리셋 시키는 css를 넣음-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mystyle Kakao-talk</title>
+  </head>
+  <body class="chat-screen">
+    <div class="top-bar">
+      <div class="top-bar__column">
+        <span>KT 18:43</span>
+      </div>
+      <div class="top-bar__column">
+        <!--top-bar 이미지넣기-->
+        <img src="screenshot/최상단 아이콘.png" />
+        <span>11%</span>
+        <i class="fas fa-battery-quarter fa-lg"></i>
+        <!--배터리 아이콘넣기-->
+      </div>
+    </div>
+    <!--top-bar완성-->
+
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="chats.html">
+          <i class="fas fa-angle-left fa-2x"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="friends-header__title">창욱★</h1>
+      </div>
+      <div class="alt-header__column">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-bars fa-lg"></i></span>
+      </div>
+    </header>
+
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">2020년 9월 23일 수요일</div>
+
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">알바 안오냐? ㅡㅡ</span>
+            <span class="message__time">20:40</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row">
+        <img src="screenshot/지창욱.jpg" />
+        <div class="message-row__content">
+          <span class="message__author">창욱★</span>
+          <div class="message__info">
+            <span class="message__bubble">알바 가기 싫다..ㅠ</span>
+            <span class="message__time">20:55</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">너네 가게잖아! 인뫄!</span>
+            <span class="message__time">21:25</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row">
+        <img src="screenshot/지창욱.jpg" />
+        <div class="message-row__content">
+          <span class="message__author">창욱★</span>
+          <div class="message__info">
+            <span class="message__bubble">하.. 10분만 있다가 갈게...</span>
+            <span class="message__time">21:30</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">ㅂㄷㅂㄷ...(내가 그만두고 만다)</span>
+            <span class="message__time">21:40</span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--채팅방 대화끝-->
+
+    <!--채팅 키보드 만들기-->
+    <form class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="메세지를 입력하세요." />
+        <i class="far fa-smile-wink fa-lg"></i>
+        <button>
+          <i class="fab fa-pushed"></i>
+        </button>
+      </div>
+    </form>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--아이콘 사이트에서 불러올 수있는 코드-->
+  </body>
+</html>

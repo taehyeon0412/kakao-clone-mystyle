@@ -1,3 +1,195 @@
 .chat-screen {
   background-color: white;
 }
+
+.chat-screen .top-bar {
+  z-index: 2;
+}
+
+.chat-screen .alt-header {
+  z-index: 1;
+}
+
+/*z-index 번호가 낮으면 스크린상 아래쪽에 위치하고
+번호가 높으면 스크린상 위쪽에 위치해서 스크롤시 높은번호가
+위로 보이게한다*/
+
+.message-row img {
+  width: 60px;
+  height: 60px;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+
+.main-chat {
+  display: flex; /*정렬방향을 수평방향으로 만듦*/
+  flex-direction: column; /*flex한것을 열방향으로 정렬*/
+  align-items: center; /*열(세로)방향으로 정렬했으니 세로축을 기준으로 중앙정렬*/
+}
+
+.chat__timestamp {
+  color: white;
+  padding: 10px;
+  background-color: #92a4b2;
+  font-size: 12px;
+  border-radius: 25px;
+  margin-bottom: 30px;
+}
+
+.message-row {
+  width: 100%;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.message__author {
+  opacity: 0.9;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.message__info {
+  display: flex;
+  align-items: flex-end; /* 끝쪽으로 정렬*/
+}
+
+.message__bubble {
+  background-color: rgb(231, 211, 211);
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  margin-right: 5px;
+}
+
+.message__time {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.message-row--own {
+  justify-content: flex-end;
+}
+
+.message-row--own .message__bubble {
+  background-color: var(--yellow);
+  border-top-right-radius: 0px;
+  border-top-left-radius: 15px;
+  margin-right: 0px;
+  margin-left: 5px;
+}
+
+/*메세지,시간 순서 변경하는법1*/
+
+.message-row--own .message__info {
+  flex-direction: row-reverse; /*flex-방향=거꾸로한다 */
+}
+
+/* 메세지,시간 순서 변경하는법2
+  .message-row--own .message__bubble {
+    order: 1;
+  }
+  .message-row--own .message__time {
+    order: 0;
+  }
+  */
+/*flex를 한 상태에서 order로 순서를 바꿀수있다 작은숫자가 앞, 큰숫자가 뒤*/
+/*flex의 자식들한테만 적용됨
+     message info에 flex를 걸었으니 그 하위자식인 bubble과 time에 적용되는것*/
+
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 25px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.reply .reply__column:first-child {
+  width: 10%;
+}
+
+.reply .reply__column:last-child {
+  width: 90%;
+  position: relative;
+}
+
+.reply input {
+  height: 30px;
+  width: 80%;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+/*input 애니메이션이 작동하기 위해서는 input안에 transition을 넣어야한다.*/
+
+.reply__column:last-child > i,
+.reply__column:last-child button {
+  position: absolute;
+  right: -15px;
+  top: 5px;
+}
+
+.reply__column:last-child > i {
+  right: 20px;
+  top: 10px;
+}
+
+.reply__column button {
+  background-color: var(--gblue);
+  border: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 30%;
+}
+
+.reply .reply__column:first-child,
+.reply .fa-smile-wink,
+.reply button {
+  transition: opacity 0.3s ease-in-out;
+}
+/*reply 내부에 어떤 요소가 선택되어있다면 작동*/
+/*0.왼쪽 +아이콘 사라지게하기*/
+/*1.웃는얼굴 아이콘 사라지게하기*/
+/*2.버튼사라지게하기*/
+
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-smile-wink,
+.reply:focus-within button {
+  opacity: 0;
+}
+
+.reply input:focus {
+  width: 90vw;
+  background-color: pink;
+  animation: replyani 0.65s ease-in-out both;
+}
+
+.reply:focus-within {
+  transform: translateY(80px);
+}
+
+@keyframes replyani {
+  0% {
+    transform: rotate(540deg) scale(5);
+    opacity: 0;
+  }
+  50% {
+    transform: rotate(360deg) scale(3);
+    opacity: 0.4;
+  }
+  70% {
+    transform: rotate(360deg) scale(2);
+    opacity: 0.8;
+  }
+  100% {
+    transform: rotate(0) scale(1) translateX(-12%) translateY(-120px);
+
+    opacity: 1;
+  }
+}

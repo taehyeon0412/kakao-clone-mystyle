@@ -10,6 +10,7 @@
 @import "birthdaytap.css";
 @import "badge.css";
 @import "chatting.css";
+@import "alt-screen-header.css";
 
 body {
   height: 115vh;

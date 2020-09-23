@@ -22,21 +22,59 @@
     </div>
     <!--top-bar완성-->
 
-    <header class="friends-header">
+    <header class="alt-header">
       <div class="alt-header__column">
         <a href="chats.html">
-          <i class="fas fa-angle-left fa-3x"></i>
+          <i class="fas fa-angle-left fa-2x"></i>
         </a>
       </div>
       <div class="alt-header__column">
         <h1 class="friends-header__title">효성★</h1>
       </div>
-      <div class="friends-header__icons">
+      <div class="alt-header__column">
         <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-bars fa-lg"></i></span>
       </div>
     </header>
 
-    <!---->
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">2020년 9월 23일 수요일</div>
+
+      <div class="message-row">
+        <img src="screenshot/전효성1.jpg" />
+        <div class="message-row__content">
+          <span class="message__author">효성★</span>
+          <div class="message__info">
+            <span class="message__bubble">나랑 같이 춤추러 갈래?</span>
+            <span class="message__time">21:22</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">가즈아!!</span>
+            <span class="message__time">21:25</span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--채팅방 대화끝-->
+
+    <!--채팅 키보드 만들기-->
+    <form class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="메세지를 입력하세요." />
+        <i class="far fa-smile-wink fa-lg"></i>
+        <button>
+          <i class="fab fa-pushed"></i>
+        </button>
+      </div>
+    </form>
+
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
       crossorigin="anonymous"
