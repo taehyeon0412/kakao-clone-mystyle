@@ -8,6 +8,8 @@
 @import "user-component.css";
 @import "nav-bar.css";
 @import "birthdaytap.css";
+@import "badge.css";
+@import "chatting.css";
 
 body {
   height: 115vh;
@@ -20,4 +22,8 @@ body {
   background-blend-mode: darken;
   background-blend-mode: soft-light;
   background-blend-mode: luminosity;
+}
+
+.main-screen {
+  padding: 0px 15px;
 }

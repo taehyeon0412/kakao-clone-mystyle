@@ -79,7 +79,7 @@
 /*투명도1에서 0까지 애니메이션으로 바꿈
   @keyframes 기억하기 */
 
-.blur-out-expand-fwd {
+.logindoor {
   background-color: var(--gblue);
   position: fixed; /*화면을 고정시켜 안맞는부분을 강제로 안보이게 함*/
   height: 100vh; /*화면 높이를 임의적으로 늘려놨으니 그 수치만큼 적어야됨*/
@@ -89,44 +89,25 @@
   justify-content: center;
   align-items: center;
   font-size: 132px;
-  -webkit-animation: blur-out-expand-fwd 2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    3s both;
-  animation: blur-out-expand-fwd 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 3s both;
+  animation: logindoor 1s cubic-bezier(0.6, -0.28, 0.735, 0.045) 3s both;
 }
 
-@-webkit-keyframes blur-out-expand-fwd {
+@keyframes logindoor {
   0% {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-filter: blur(0.01);
-    filter: blur(0.01);
+    transform: rotate(0) scale(1);
+    transform-origin: 50% 0%;
+    opacity: 1;
   }
   100% {
-    letter-spacing: 1em;
-    -webkit-transform: translateZ(300px);
-    transform: translateZ(300px);
-    -webkit-filter: blur(12px) opacity(0%);
-    filter: blur(12px) opacity(0%);
-  }
-}
-@keyframes blur-out-expand-fwd {
-  0% {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-filter: blur(0.01);
-    filter: blur(0.01);
-  }
-  100% {
-    letter-spacing: 1em;
-    -webkit-transform: translateZ(300px);
-    transform: translateZ(300px);
-    -webkit-filter: blur(12px) opacity(0%);
-    filter: blur(12px) opacity(0%);
+    transform: rotate(-540deg) scale(0);
+    transform-origin: 50% 0%;
+    opacity: 0;
     visibility: hidden;
-    /*visibility:hidden => element는 그대로 있지만 사용자의 마우스에
-걸리지 않게 빠지는것(무시하는것) 그래서 정상적인 기능 수행가능*/
   }
 }
+
+/*visibility:hidden => element는 그대로 있지만 사용자의 마우스에
+걸리지 않게 빠지는것(무시하는것) 그래서 정상적인 기능 수행가능*/
 
 /*애니메이션 기능은 
 https://animista.net/play/text/blur-out/blur-out-expand-fwd에서

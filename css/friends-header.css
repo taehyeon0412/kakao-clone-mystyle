@@ -2,13 +2,14 @@
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
+  margin-bottom: 20px;
   align-items: center;
 }
 
 .friends-header__title {
   font-size: 25px;
   font-weight: 600;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .friends-header__icons span {
@@ -25,6 +26,7 @@
 }
 
 .friends-header__icons .fa-cog:hover {
+  will-change: transform;
   animation: rotateCog 1s linear infinite;
 }
 /*톱니바퀴 애니메이션*/
