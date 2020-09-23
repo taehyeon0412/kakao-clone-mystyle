@@ -1,0 +1,49 @@
+.friends-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.friends-header__title {
+  font-size: 25px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.friends-header__icons span {
+  margin-right: 15px;
+}
+
+@keyframes rotateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.friends-header__icons .fa-cog:hover {
+  animation: rotateCog 1s linear infinite;
+}
+/*톱니바퀴 애니메이션*/
+
+@keyframes music {
+  0% {
+    color: black;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: pink;
+    transform: none;
+  }
+}
+
+.friends-header__icons .fa-music:hover {
+  animation: music 1s linear infinite;
+}

@@ -1,0 +1,47 @@
+.freinds-screen__birthday-header {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+  margin-bottom: -10px;
+}
+
+.freinds-screen__birthday-header i {
+  margin-right: 10px;
+}
+
+.freinds-screen__birthday {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  padding-top: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.freinds-screen {
+  padding: 0px 15px;
+}
+
+.freinds-screen__channel {
+  padding-top: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.freinds-screen__channel-header {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+  margin-bottom: -10px;
+}
+
+.freinds-screen__friend-header {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+  margin-bottom: -10px;
+}
+
+.freinds-screen__friend {
+  padding-top: 10px;
+  margin-bottom: -40px;
+}
