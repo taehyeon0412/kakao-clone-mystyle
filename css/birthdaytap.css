@@ -1,0 +1,76 @@
+.birthdaytap-header {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  align-items: center;
+  padding: 0px 15px 30px 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.birthdaytap-header__title {
+  font-size: 25px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.birthdaytap-screen {
+  padding: 0px 15px;
+}
+
+.birthdaytap-user-component__title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.birthdaytap-screen__friend-header {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+  margin-bottom: -15px;
+}
+
+.birthdaytap-screen__friend {
+  padding-top: 10px;
+}
+
+.birthdaytap-user-component__column {
+  margin-top: 25px;
+  margin-right: 5px;
+}
+
+.birthdaytap-user-component__column a {
+  width: 100px;
+  background-color: #f8585b;
+  border: none;
+  color: whitesmoke;
+  opacity: 0.9;
+  padding: 5px 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  border-radius: 15px;
+}
+
+.birthdaytap-user-component__column i {
+  margin-left: 5px;
+}
+
+.birthdaytap-user-component__column:hover {
+  animation: gift 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
+  animation-fill-mode: none;
+}
+
+@keyframes gift {
+  0% {
+    transform: translateZ(0);
+    filter: blur(0.01);
+  }
+  100% {
+    letter-spacing: 1em;
+    transform: translateZ(300px);
+    filter: blur(12px) opacity(0%);
+  }
+}
