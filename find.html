@@ -23,35 +23,64 @@
     <!--top-bar완성-->
 
     <header class="friends-header">
-      <h1 class="friends-header__title">채팅</h1>
+      <h1 class="friends-header__title">찾기</h1>
       <div class="friends-header__icons">
         <span><i class="fas fa-search fa-lg"></i></span>
-        <span><i class="far fa-comment-dots fa-lg"></i></span>
-        <span><i class="fas fa-music fa-lg"></i></span>
         <span
           ><a href="settings.html"><i class="fas fa-cog fa-lg"></i></a
         ></span>
       </div>
     </header>
 
-      <!--채널 목록-->
-      <div class="freinds-screen__channel">
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              src=""
-              class="user-component__avatar user-component__avatar--sm"
-            />
-            <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--not-bold">
-                채널
-              </h4>
+    <main class="main-screen">
+      <!--찾기 아이콘 구간 시작-->
+      <div class="find-icon">
+        <div class="find-icon__icon">
+          <i class="fas fa-qrcode"></i><span>QR Code</span>
+        </div>
+        <div class="find-icon__icon">
+          <i class="far fa-address-book"></i><span>Add by Contacts</span>
+        </div>
+        <div class="find-icon__icon">
+          <i class="fas fa-fingerprint"></i><span>Add by ID</span>
+        </div>
+        <div class="find-icon__icon">
+          <i class="far fa-envelope"></i><span>Invite</span>
+        </div>
+      </div>
+      <!--찾기 아이콘 구간 끝-->
+
+      <!--친구 추천 구간 시작-->
+      <div class="recommended-friends">
+        <h6 class="recommended-friends__title">친구 추천</h6>
+        <span>추천할 친구가 없습니다.</span>
+      </div>
+      <!-- 친구 추천 구간 끝-->
+
+      <!--오픈 포스트 구간 시작-->
+      <div class="open-chat">
+        <div class="open-chat__header">
+          <h4>오픈 채팅</h4>
+          <span>오픈 채팅 홈<i class="fas fa-chevron-right fa-xs"></i></span>
+        </div>
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">#오마이걸</h5>
+            <h6 class="open-post__hashtags">#rocket ride</h6>
+            <div class="open-post__members">
+              <img src="screenshot/전효성2.jpg" />
+              <span class="open-post__member-count">1332명</span>
+              <div class="divider"></div>
+              <!--divider는 구간을 |로 나눠준다-->
+              <span class="open-post__member-status">active</span>
             </div>
           </div>
-          <div class="user-component__column">
-            <div>
-              <span>14 </span
-              ><a href="#"><i class="fas fa-chevron-right fa-xs"></i></a>
+          <div class="open-post__column">
+            <div class="open-post__photo">
+              <img src="screenshot/오마이걸1.jpg" />
+              <div class="open-post__heart-count">
+                <i class="fas fa-heart fa-xs"></i><span>1300</span>
+              </div>
             </div>
           </div>
         </div>
@@ -68,17 +97,18 @@
             ><i class="far fa-user fa-lg"></i
           ></a>
         </li>
-        <li>
+        <li class="nav__btn">
           <a class="nav__link" href="chats.html"
+            ><span class="nav__notification badge">56</span
             ><i class="far fa-comment fa-lg"></i
           ></a>
         </li>
-        <li>
+        <li class="nav__btn">
           <a class="nav__link" href="find.html"
             ><i class="fas fa-search fa-lg"></i
           ></a>
         </li>
-        <li>
+        <li class="nav__btn">
           <a class="nav__link" href="more.html"
             ><i class="fas fa-ellipsis-h fa-lg"></i
           ></a>

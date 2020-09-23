@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <!--html에서 기본적으로 설정되어있는것을 리셋 시키는 css를 넣음-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mystyle Kakao-talk</title>
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="top-bar__column">
+        <span>KT 18:43</span>
+      </div>
+      <div class="top-bar__column">
+        <!--top-bar 이미지넣기-->
+        <img src="screenshot/최상단 아이콘.png" />
+        <span>11%</span>
+        <i class="fas fa-battery-quarter fa-lg"></i>
+        <!--배터리 아이콘넣기-->
+      </div>
+    </div>
+    <!--top-bar완성-->
+
+    <header class="friends-header">
+      <h1 class="friends-header__title">친구</h1>
+      <div class="friends-header__icons">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="far fa-comment-dots fa-lg"></i></span>
+        <span><i class="fas fa-music fa-lg"></i></span>
+        <span
+          ><a href="settings.html"><i class="fas fa-cog fa-lg"></i></a
+        ></span>
+      </div>
+    </header>
+
+    <main class="friends-screen">
+      <a href="chatting1.html">
+        <div class="freinds-screen__friend">
+          <div class="user-component">
+            <div class="user-component__column">
+              <img
+                src="screenshot/전효성1.jpg"
+                class="user-component__avatar user-component__avatar--sm"
+              />
+              <div class="user-component__text">
+                <h4
+                  class="user-component__title user-component__title--not-bold"
+                >
+                  효성★
+                </h4>
+                <h6 class="user-component__subtitle">나랑 춤추러 갈래?</h6>
+              </div>
+            </div>
+            <div class="user-component__column">
+              <span class="user-component__time">21:22</span>
+              <div class="badge">2</div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="chatting2.html">
+        <div class="freinds-screen__friend">
+          <div class="user-component">
+            <div class="user-component__column">
+              <img
+                src="screenshot/지창욱.jpg"
+                class="user-component__avatar user-component__avatar--sm"
+              />
+              <div class="user-component__text">
+                <h4
+                  class="user-component__title user-component__title--not-bold"
+                >
+                  창욱★
+                </h4>
+                <h6 class="user-component__subtitle">알바 가기 싫다..ㅠ</h6>
+              </div>
+            </div>
+            <div class="user-component__column">
+              <span class="user-component__time">20:55</span>
+              <div class="badge">1</div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <!--친구1-->
+    </main>
+
+    <!--하단 네비게이션-->
+    <nav class="nav">
+      <ul class="nav__list">
+        <!--li는 List Item의 약자로서 
+          목록의 개별 아이템을 추가할 때 사용됩니다-->
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html"
+            ><i class="far fa-user fa-lg"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html"
+            ><span class="nav__notification badge">56</span
+            ><i class="far fa-comment fa-lg"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html"
+            ><i class="fas fa-search fa-lg"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html"
+            ><i class="fas fa-ellipsis-h fa-lg"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!---->
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--아이콘 사이트에서 불러올 수있는 코드-->
+  </body>
+</html>

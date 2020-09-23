@@ -1,0 +1,23 @@
+.find-icon {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  padding-top: 20px;
+}
+
+.find-icon__icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+/*row는 옆으로 오는것, column은 다음줄(세로정렬)에 오는것*/
+
+.find-icon__icon i {
+  font-size: 25px;
+}
+
+.find-icon__icon span {
+  margin-top: 15px;
+}

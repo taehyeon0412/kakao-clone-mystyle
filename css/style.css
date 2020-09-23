@@ -11,6 +11,8 @@
 @import "badge.css";
 @import "chatting.css";
 @import "alt-screen-header.css";
+@import "find-icon.css";
+@import "find.css";
 
 body {
   height: 115vh;
