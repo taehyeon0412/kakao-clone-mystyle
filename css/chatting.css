@@ -181,6 +181,7 @@
   }
   50% {
     transform: rotate(360deg) scale(3);
+    opacity: 0.5;
   }
   70% {
     transform: rotate(180deg) scale(1);
