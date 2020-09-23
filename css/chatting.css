@@ -167,7 +167,7 @@
 .reply input:focus {
   width: 90vw;
   background-color: pink;
-  animation: replyani 2s ease-in-out both;
+  animation: replyani 0.6s ease-in-out both;
 }
 
 .reply:focus-within {
@@ -187,7 +187,7 @@
     opacity: 0.8;
   }
   100% {
-    transform: rotate(0) scale(1) translateX(-12%) translateY(-150px);
+    transform: rotate(0) scale(1) translateX(-12%) translateY(-80px);
 
     opacity: 1;
   }
