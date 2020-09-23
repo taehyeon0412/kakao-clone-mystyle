@@ -9,7 +9,7 @@
 @import "nav-bar.css";
 
 body {
-  height: 100vh;
+  height: 115vh;
   background: linear-gradient(rgb(51, 112, 245), transparent),
     linear-gradient(to top left, rgb(45, 11, 109), transparent),
     linear-gradient(to top right, rgb(15, 100, 139), transparent);
