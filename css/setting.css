@@ -25,7 +25,7 @@
 /*설정 애니메이션 */
 .Settings__Setting-column:hover {
   animation: setting-ani 0.3s linear infinite both,
-    setting-ani2 5s linear infinite both;
+    setting-ani2 3s linear infinite both;
 }
 
 @keyframes setting-ani {
