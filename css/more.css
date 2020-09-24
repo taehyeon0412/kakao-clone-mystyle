@@ -1,0 +1,105 @@
+.paybox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  background-color: rgba(128, 128, 128, 0.4);
+  margin-bottom: 20px;
+}
+
+.paybox-front {
+  margin-left: 5px;
+}
+
+.pay {
+  font-weight: 600;
+}
+
+.fa-chevron-right {
+  opacity: 0.3;
+}
+
+.money {
+  opacity: 0.4;
+}
+
+.paybox-end {
+  display: flex;
+}
+
+.paybox-end .divider {
+  width: 1px;
+  height: 15px;
+  margin: 0 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.remittance {
+  margin-right: 5px;
+}
+
+.payment {
+  margin-left: 5px;
+}
+
+.more-icon {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  padding-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.more-icon__icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  width: 25%;
+}
+/*row는 옆으로 오는것, column은 다음줄(세로정렬)에 오는것*/
+
+.more-icon__icon i {
+  font-size: 25px;
+}
+
+.more-icon__icon span {
+  margin-top: 15px;
+}
+
+.more-ad__photo {
+  margin-top: 30px;
+}
+
+.more-ad__photo img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.more-ad__dot {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 10px;
+}
+
+.paybox__button:hover {
+  animation: paybox__button 0.65s infinite;
+  animation-fill-mode: none;
+}
+
+@keyframes paybox__button {
+  0% {
+    transform: rotate(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(540deg) scale(5);
+    opacity: 0;
+  }
+}

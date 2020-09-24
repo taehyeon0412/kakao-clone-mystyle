@@ -23,10 +23,10 @@
     <!--top-bar완성-->
 
     <header class="friends-header">
-      <h1 class="friends-header__title">친구</h1>
+      <h1 class="friends-header__title">더보기</h1>
       <div class="friends-header__icons">
         <span><i class="fas fa-search fa-lg"></i></span>
-        <span><i class="far fa-comment-dots fa-lg"></i></span>
+        <span> <i class="fas fa-qrcode fa-lg"></i></span>
         <span><i class="fas fa-music fa-lg"></i></span>
         <span
           ><a href="settings.html"><i class="fas fa-cog fa-lg"></i></a
@@ -35,55 +35,76 @@
     </header>
 
     <main class="friends-screen">
-      <a href="chatting1.html">
-        <div class="freinds-screen__friend">
-          <div class="user-component">
-            <div class="user-component__column">
-              <img
-                src="screenshot/전효성1.jpg"
-                class="user-component__avatar user-component__avatar--sm"
-              />
-              <div class="user-component__text">
-                <h4
-                  class="user-component__title user-component__title--not-bold"
-                >
-                  효성★
-                </h4>
-                <h6 class="user-component__subtitle">나랑 춤추러 갈래?</h6>
-              </div>
-            </div>
-            <div class="user-component__column">
-              <span class="user-component__time">21:22</span>
-              <div class="badge">2</div>
-            </div>
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="https://avatars1.githubusercontent.com/u/71374539?s=460&u=99ecadc71d487c429a037c0b4677f498f1bd37ab&v=4"
+            class="user-component__avatar user-component__avatar--xl"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">태현</h4>
+            <h6 class="user-component__subtitle">
+              +82 10 5444 3984 <i class="fas fa-exclamation-circle"></i>
+            </h6>
           </div>
         </div>
-      </a>
-      <a href="chatting2.html">
-        <div class="freinds-screen__friend">
-          <div class="user-component">
-            <div class="user-component__column">
-              <img
-                src="screenshot/지창욱.jpg"
-                class="user-component__avatar user-component__avatar--sm"
-              />
-              <div class="user-component__text">
-                <h4
-                  class="user-component__title user-component__title--not-bold"
-                >
-                  창욱★
-                </h4>
-                <h6 class="user-component__subtitle">알바 가기 싫다..ㅠ</h6>
-              </div>
-            </div>
-            <div class="user-component__column">
-              <span class="user-component__time">20:55</span>
-              <div class="badge">1</div>
-            </div>
-          </div>
+        <div class="user-component__column">
+          <i class="far fa-comment-alt fa-2x"></i>
         </div>
-      </a>
-      <!--친구1-->
+      </div>
+      <!--내 프로필-->
+      <!--결제 박스-->
+      <div class="paybox">
+        <div class="paybox-front">
+          <i class="fas fa-comment"></i> <span class="pay">pay</span>
+          <i class="fas fa-chevron-right fa-xs"></i>
+          <span class="money">0원</span>
+          <button class="paybox__button">충전</button>
+        </div>
+        <div class="paybox-end">
+          <span class="remittance">송금</span>
+          <div class="divider"></div>
+          <span class="payment">결제</span>
+        </div>
+      </div>
+      <!--결제 박스 끝-->
+      <!--서비스 박스 시작-->
+      <div class="more-icon">
+        <div class="more-icon__icon">
+          <i class="far fa-calendar-alt"></i><span>달력</span>
+        </div>
+        <div class="more-icon__icon">
+          <i class="far fa-laugh"></i><span>이모티콘</span>
+        </div>
+        <div class="more-icon__icon">
+          <i class="fas fa-brush"></i><span>테마</span>
+        </div>
+        <div class="more-icon__icon">
+          <i class="fas fa-file-invoice-dollar"></i><span>계좌 연결</span>
+        </div>
+      </div>
+      <div class="more-icon">
+        <div class="more-icon__icon">
+          <i class="fas fa-store"></i><span>쇼핑하기</span>
+        </div>
+        <div class="more-icon__icon">
+          <i class="far fa-envelope"></i><span>메일</span>
+        </div>
+        <div class="more-icon__icon">
+          <i class="fas fa-utensils"></i>주문하기</span>
+        </div>
+        <div class="more-icon__icon">
+          <i class="fas fa-border-none"></i><span>전체 서비스</span>
+        </div>
+      </div>
+      <!--서비스 박스 끝-->
+      <!--광고판 시작-->
+      <div class="more-ad">
+        <div class="more-ad__photo"><img src="screenshot/kakaotv.jpg"></div>
+        <div class="more-ad__dot"><i class="fas fa-circle"></i><i class="far fa-circle"></i><i class="far fa-circle"></i><i class="far fa-circle"></i></div>
+<!--광고판 끝-->
+      </div>
+
     </main>
 
     <!--하단 네비게이션-->
@@ -115,7 +136,6 @@
       </ul>
     </nav>
 
-    <!---->
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
       crossorigin="anonymous"

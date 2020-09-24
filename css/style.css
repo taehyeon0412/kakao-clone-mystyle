@@ -13,6 +13,8 @@
 @import "alt-screen-header.css";
 @import "find-icon.css";
 @import "find.css";
+@import "more.css";
+@import "setting.css";
 
 body {
   height: 115vh;
