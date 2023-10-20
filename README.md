@@ -12,3 +12,5 @@
 - 검색 페이지
 - 더보기 페이지
 - 친구 생일 페이지
+
+![카카오톡클론](https://github.com/taehyeon0412/react_movie-site-clone/assets/71374539/993a00b1-38c4-4f01-bcd8-c8d39e223de1)
